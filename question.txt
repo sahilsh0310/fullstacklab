@@ -1,0 +1,39 @@
+Question 6: Movie Management API
+Task:
+Create Movie CRUD APIs using MongoDB.
+Movie Schema:
+{
+title: String,
+director: String,
+rating: Number
+}
+
+APIs:
+● POST /movies
+● GET /movies
+● GET /movies/:id
+● PUT /movies/:id
+● DELETE /movies/:id
+
+Constraints:
+● All fields required
+● rating must be between 1 to 10
+● Proper status codes required
+Bonus:
+Create API:
+GET /movies/top-rated
+
+Return movies having rating greater than 8.
+
+Submission Instructions
+1. Create separate folder/project for each question.
+2. Use:
+○ Express
+○ MongoDB
+○ Mongoose
+3. Push code to GitHub repository.
+4. Repository must contain:
+○ package.json
+○ Proper folder structure
+○ .gitignore
+5. Submit GitHub repository link before time ends.
