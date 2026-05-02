@@ -15,8 +15,12 @@ router.post("/", async (req, res) => {
 
   const movie = await Movie.create({ title, director, rating });
   res.status(201).json(movie);
+
+
 });
-
-
+router.get("/", async (req, res) => {
+  const movies = await Movie.find();
+  res.json(movies);
+});
 
 module.exports = router;
